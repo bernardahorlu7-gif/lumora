@@ -1,6 +1,7 @@
 (() => {
   const root = '../';
   const apiBase = window.LUMORA_API_URL || 'http://localhost:4000/api';
+  const staffPortalUrl = window.LUMORA_STAFF_PORTAL_URL || `${apiBase.replace(/\/api\/?$/, '')}/login.html`;
   const routes = {
     home: `${root}home_lumora_demoore_properties/code.html`,
     about: `${root}about_us_lumora_demoore_properties/code.html`,
@@ -68,6 +69,14 @@
     footer.innerHTML = footer.innerHTML
       .replace(/Lumora DeMoore Properties\s*[·-]\s*Accra, Ghana\s*[·-]/g, 'Lumora DeMoore Properties - Ofankor Barrier, Accra, Ghana - 0500887266 -')
       .replace(/Lumora DeMoore Properties\s*[·-]\s*Accra, Ghana/g, 'Lumora DeMoore Properties - Ofankor Barrier, Accra, Ghana - 0500887266 - Lumora_demore@yahoo.com');
+    if (!footer.querySelector('.lumora-staff-portal-link')) {
+      const link = document.createElement('a');
+      link.className = 'lumora-staff-portal-link';
+      link.href = staffPortalUrl;
+      link.textContent = 'Staff Portal';
+      link.style.cssText = 'display:inline-block;margin-top:1rem;color:#d4af37;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;';
+      footer.appendChild(link);
+    }
   });
 
   document.querySelectorAll('a[href="#"]').forEach((link) => {
