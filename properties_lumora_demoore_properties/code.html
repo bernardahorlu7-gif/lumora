@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Properties - Lumora DeMoore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#353534",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-container": "#dab36a",
+                        "tertiary-fixed": "#e3e2e2",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface": "#131313",
+                        "secondary-container": "#604403",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-bright": "#3a3939",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#d0c5af",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-container": "#201f1f",
+                        "outline": "#99907c",
+                        "surface-dim": "#131313",
+                        "on-error-container": "#ffdad6",
+                        "tertiary": "#cfcece",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "on-surface": "#e5e2e1",
+                        "primary-container": "#d4af37",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "inverse-primary": "#735c00",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed": "#241a00",
+                        "primary-fixed": "#ffe088",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-container": "#554300",
+                        "primary": "#f2ca50",
+                        "surface-tint": "#e9c349",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "background": "#131313",
+                        "on-tertiary-container": "#444546",
+                        "on-primary": "#3c2f00",
+                        "secondary": "#e9c176",
+                        "on-secondary": "#412d00",
+                        "surface-container-highest": "#353534",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "secondary-fixed": "#ffdea5",
+                        "on-background": "#e5e2e1",
+                        "tertiary-container": "#b3b3b3",
+                        "outline-variant": "#4d4635",
+                        "inverse-surface": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "grid-column-count": "12",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "title-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Manrope"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0B0B0B;
+            color: #e5e2e1;
+        }
+        .blueprint-grid {
+            background-image: 
+                linear-gradient(to right, rgba(197, 160, 89, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(197, 160, 89, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .architectural-line-h {
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        }
+        .architectural-line-v {
+            border-right: 1px solid rgba(197, 160, 89, 0.2);
+        }
+    </style>
+</head>
+<body class="blueprint-grid min-h-screen flex flex-col font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline/20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<div class="font-display-lg text-title-lg tracking-tighter text-primary">
+                Lumora DeMoore
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">Projects</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">Quality</a>
+<a class="text-primary border-b border-primary pb-1 font-label-md text-label-md" href="#">Properties</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150 font-label-md text-label-md" href="#">Contact</a>
+</div>
+<button class="hidden md:inline-flex items-center justify-center px-6 py-2 border border-primary-container text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-150 ease-in-out font-label-md text-label-md">
+                Request a Proposal
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-weight="100">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-32 relative">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter architectural-line-h pb-16 relative">
+<div class="md:col-span-8 architectural-line-v pr-gutter">
+<span class="font-label-sm text-label-sm text-primary-container block mb-4 uppercase tracking-widest">Sector: Real Estate Development</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-8">Architectural Mastery &amp; Development</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Lumora DeMoore creates iconic structures that redefine luxury living and commercial excellence. Our properties are a testament to rigorous engineering, premium materiality, and uncompromising design vision.
+                    </p>
+</div>
+<div class="md:col-span-4 flex items-end">
+<div class="w-full h-48 bg-surface-container-high relative overflow-hidden flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant absolute top-4 right-4">REF: LDM-PRJ-001</span>
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="A highly detailed, wide-angle shot of a minimalist concrete and steel structure in the early stages of development. The scene is lit by dramatic, golden hour sunlight highlighting the rough textures of the concrete and the precision of the steel framework. The aesthetic is raw, technical, and premium, evoking a sense of structural integrity. Dark, moody undertones with sharp highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFiqRtOeNwvatzSfUgYo9CpXgeRz-od6jWzwZVds1DS2GFHDhfhAeWf2SzFzWA4sgBE8o5x_K5pemrPmooQIAh1_4Zk8aUrOzC-45df1dFVQe06-1XeFZOMWN-k8T3BgOywl3auE2SSjB--joAl-Az16LyZFQO9fZ_TMJY-1QVAubC0-0eCTh4uOlUzUZy71JW9xBGzoYlJvLRZEh72pi-efp9WnnGU23WNGg1wrP2riz_rctVMy8k"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Development Capabilities -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter architectural-line-h pb-16">
+<div class="bg-[#121212] p-8 border border-outline/10 hover:border-primary/50 transition-colors duration-300 relative group">
+<div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-weight="100">architecture</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-4">Site Acquisition</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Strategic identification and procurement of prime land parcels, evaluating topographical suitability and long-term value potential in key markets.</p>
+</div>
+<div class="bg-[#121212] p-8 border border-outline/10 hover:border-primary/50 transition-colors duration-300 relative group">
+<div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-weight="100">foundation</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-4">Structural Engineering</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Rigorous structural planning utilizing advanced materials science to ensure unmatched stability, longevity, and safety in every development.</p>
+</div>
+<div class="bg-[#121212] p-8 border border-outline/10 hover:border-primary/50 transition-colors duration-300 relative group">
+<div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-weight="100">domain</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-4">Execution &amp; Delivery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Precision-driven construction management, adhering to uncompromising quality standards and strict timelines to deliver turnkey properties.</p>
+</div>
+</div>
+</section>
+<!-- Current & Upcoming -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-12 flex items-center">
+<span class="w-12 h-[1px] bg-primary mr-6"></span>
+                Current &amp; Upcoming
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="bg-[#121212] border border-outline/10 flex flex-col group">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-100" data-alt="A striking architectural visualization of a modern, multi-story luxury residence. The building features expansive glass facades, raw concrete retaining walls, and dark steel accents. The scene is illuminated by subtle exterior lighting against a deep dusk sky, emphasizing the clean geometric lines and premium materials. The mood is sophisticated and exclusive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9VhrlVJpa37pABNIgMrdAwZ-lfIB-YJOMAg8JcT8W25TSF7WpNxfUHJluGMoQbI0VX8ZpUSfM3m6yoeBwvaX4LEWgcqt8XU4Yae1s4LJMsWS1lXNTwk5y00f5kl1-WxRk50kuc8qt3U98SpHEObXjxSDIzeC7T_kNtoI2LFkNj8V2drR9zuirlKZUJmm-DWpVfMz1rQ6XOWo6bdsDgg25LyDrzf_xH9dtfnbWu4OHnDDK1uuPBrgn"/>
+<div class="absolute top-4 right-4 bg-[#181818] px-3 py-1 text-on-surface font-label-sm text-label-sm border border-outline/20">
+                            PHASE: PLANNING
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="font-label-sm text-label-sm text-primary-container mb-2">LDM-RES-04</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-4">The Oakhaven Enclave</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">A proposed collection of ultra-modern private residences prioritizing spatial fluidity and integration with the surrounding natural topography.</p>
+<div class="w-full bg-surface-container-high h-[1px] relative mt-auto">
+<div class="absolute top-0 left-0 h-full bg-primary w-1/4 transition-all duration-1000 ease-out"></div>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="bg-[#121212] border border-outline/10 flex flex-col group">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-100" data-alt="A detailed close-up shot of heavy construction equipment and structural steel beams on a development site. The image focuses on the industrial textures of rust, grey concrete, and yellow machinery. Lit by stark, bright midday sun casting sharp geometric shadows. The aesthetic is technical, robust, and foundational." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW0a5Sx6e5XtheUHIJBp-r3lv0bvc-cc-KG8kswL6xRIdi6b02cw-_WmqV1YNIUZMNYDQJ64TabqKz93RFH_MBeI5CDuOY4qczfH6jBy5MLKgdiQU88CePQSfEOOtYwKZm0SQNJTltNpmrOjTCMbGIVy_wloRTMKauZpQRiCtphzhPz5s3cDavTRQcdpPAecI_-TvmA6NnqLV6ZBTDlyzJwcd7rLpYEHlSq7LUT0IWwOmUnTSNpwGX"/>
+<div class="absolute top-4 right-4 bg-[#181818] px-3 py-1 text-on-surface font-label-sm text-label-sm border border-outline/20">
+                            PHASE: FOUNDATION
+                        </div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="font-label-sm text-label-sm text-primary-container mb-2">LDM-COM-09</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-4">Meridian Commercial Hub</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">A structural framework for a state-of-the-art commercial facility, designed with high-load bearing capacities and flexible floorplate architecture.</p>
+<div class="w-full bg-surface-container-high h-[1px] relative mt-auto">
+<div class="absolute top-0 left-0 h-full bg-primary w-1/2 transition-all duration-1000 ease-out"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Coming Soon / CTA -->
+<section class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="p-12 border border-outline/20 bg-[#121212]/50 backdrop-blur-sm relative overflow-hidden">
+<!-- Abstract Blueprint BG -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #D4AF37 0, #D4AF37 1px, transparent 1px, transparent 10px);"></div>
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6" data-weight="100">apartment</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Property Portfolio: Coming Soon</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-xl mx-auto">
+                    We are meticulously finalizing the details of our upcoming premium developments. Register your interest to receive exclusive technical specifications and early access opportunities.
+                </p>
+<form class="flex flex-col md:flex-row gap-4 justify-center max-w-lg mx-auto">
+<div class="flex-grow">
+<input class="w-full bg-transparent border-0 border-b border-outline/50 focus:border-primary text-on-surface font-body-md text-body-md py-2 px-0 focus:ring-0 transition-colors rounded-none placeholder:text-on-surface-variant/50" placeholder="Enter your email address" type="email"/>
+</div>
+<button class="px-8 py-2 border border-primary-container text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-150 ease-in-out font-label-md text-label-md whitespace-nowrap" type="submit">
+                        Register Interest
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full relative border-t border-outline/10">
+<div class="grid grid-cols-12 gap-gutter max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-16">
+<div class="col-span-12 md:col-span-6 mb-8 md:mb-0">
+<div class="font-headline-md text-headline-md text-primary mb-4">
+                    Lumora DeMoore
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    Integrated construction and property solutions for clients across Greater Accra and Ghana.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-6 flex flex-col md:items-end justify-between">
+<div class="flex flex-wrap gap-6 mb-8 md:mb-0">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Cookie Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Site Map</a>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant/50">
+                    © 2026 Lumora DeMoore Properties · Ofankor Barrier, Accra, Ghana.
+                </div>
+</div>
+</div>
+</footer>
+<script src="../integration.js"></script>
+</body></html>

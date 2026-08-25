@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Proposal - Lumora DeMoore Properties</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#353534",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-container": "#dab36a",
+                        "tertiary-fixed": "#e3e2e2",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface": "#131313",
+                        "secondary-container": "#604403",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-bright": "#3a3939",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#d0c5af",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-container": "#201f1f",
+                        "outline": "#99907c",
+                        "surface-dim": "#131313",
+                        "on-error-container": "#ffdad6",
+                        "tertiary": "#cfcece",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "on-surface": "#e5e2e1",
+                        "primary-container": "#d4af37",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "inverse-primary": "#735c00",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed": "#241a00",
+                        "primary-fixed": "#ffe088",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-container": "#554300",
+                        "primary": "#f2ca50",
+                        "surface-tint": "#e9c349",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "background": "#131313",
+                        "on-tertiary-container": "#444546",
+                        "on-primary": "#3c2f00",
+                        "secondary": "#e9c176",
+                        "on-secondary": "#412d00",
+                        "surface-container-highest": "#353534",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "secondary-fixed": "#ffdea5",
+                        "on-background": "#e5e2e1",
+                        "tertiary-container": "#b3b3b3",
+                        "outline-variant": "#4d4635",
+                        "inverse-surface": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "grid-column-count": "12",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "title-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Manrope"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .blueprint-grid {
+            background-image: 
+                linear-gradient(to right, rgba(197, 160, 89, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(197, 160, 89, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased relative blueprint-grid">
+<!-- Ambient Architecture Lines -->
+<div class="fixed top-0 bottom-0 left-[10%] w-[1px] bg-primary-container/10 z-0 pointer-events-none"></div>
+<div class="fixed top-0 bottom-0 right-[10%] w-[1px] bg-primary-container/10 z-0 pointer-events-none"></div>
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline/20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<div class="font-display-lg text-title-lg tracking-tighter text-primary">
+                Lumora DeMoore
+            </div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors duration-150" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors duration-150" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors duration-150" href="#">Projects</a>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors duration-150" href="#">Quality</a>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors duration-150" href="#">Properties</a>
+<a class="font-body-md text-body-md text-primary border-b border-primary pb-1" href="#">Contact</a>
+</div>
+<button class="hidden md:inline-flex border border-primary-container text-on-surface px-6 py-2 font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container hover:text-surface-container-lowest transition-all duration-150 ease-in-out">
+                Request a Proposal
+            </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-24 relative z-10">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Header Section -->
+<div class="mb-16 md:mb-24 relative">
+<div class="absolute -left-6 top-4 w-4 h-[1px] bg-primary-container"></div>
+<p class="font-label-sm text-label-sm text-primary-container uppercase tracking-[0.2em] mb-4">Initial Consultation</p>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface max-w-3xl leading-tight">
+                    LET'S BUILD SOMETHING <br/><span class="text-on-surface-variant">WORTHWHILE.</span>
+</h1>
+</div>
+<!-- Content Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column: Contact Information -->
+<div class="md:col-span-4 flex flex-col space-y-12 pr-0 md:pr-8 border-r-0 md:border-r border-outline/10">
+<div class="bg-surface-container-low p-8 border border-outline/10 relative">
+<div class="absolute top-0 right-0 p-2 font-label-sm text-label-sm text-outline-variant">REF: CT-INF</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-6 border-b border-outline/10 pb-4">Corporate Office</h3>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-primary-container mt-1">location_on</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Location</p>
+<p class="font-body-md text-body-md text-on-surface">Ofankor Barrier,<br/>Accra, Ghana</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-primary-container mt-1">call</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Direct Line</p>
+<p class="font-body-md text-body-md text-on-surface">0500887266<br/><span class="text-on-surface-variant">Call or WhatsApp</span></p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-primary-container mt-1">mail</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Electronic Mail</p>
+<p class="font-body-md text-body-md text-on-surface">Lumora_demore@yahoo.com</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-primary-container mt-1">schedule</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-1">Operating Hours</p>
+<p class="font-body-md text-body-md text-on-surface">Greater Accra base<br/>Nationwide by project requirement</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Atmospheric Image Placeholder -->
+<div class="hidden md:block relative h-64 border border-outline/10 overflow-hidden">
+<div class="bg-cover bg-center w-full h-full opacity-60 grayscale mix-blend-luminosity" data-alt="A high-contrast, black and white architectural photography showing close-up details of structural steel beams and textured concrete. The scene is illuminated by dramatic, angled light casting sharp geometric shadows. Thin, precise gold architectural layout lines are overlaid on the composition, reflecting a modern, premium, industrial aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8KB4gcv3diza1O9xJDRby6X4ZJg6WI2YBLB-okNM-E_2eIdVDvTadTBqBJsqrzjRvTcDoGxr09FftUm5Pg_I8WW279vzaneQq5Fe5JSdWB9Lvu4812zeHu0HoSVkuXH7GNK6ylD__CysYbW284l219Bf4x0yn9vfJHvKcnya0C-XZ8Dq5QPjQjOHm6_LWuP_7N5n-6xRJ-Q6a0IT0HJA4xjRguKfg0NUKnNVyr7nuv0sM6b1nujMd')"></div>
+</div>
+</div>
+<!-- Right Column: Interactive Forms -->
+<div class="md:col-span-8 flex flex-col pl-0 md:pl-8 space-y-16">
+<!-- Form 1: General Inquiry -->
+<section>
+<div class="flex items-center space-x-4 mb-8">
+<h2 class="font-headline-md text-headline-md text-on-surface">General Inquiry</h2>
+<div class="flex-grow h-[1px] bg-outline/20"></div>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10" id="contactForm">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="gen-name">Full Name</label>
+<input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 rounded-none" id="gen-name" required="" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="gen-company">Company / Organization</label>
+<input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 rounded-none" id="gen-company" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="gen-email">Email Address</label>
+<input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 rounded-none" id="gen-email" required="" type="email"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="gen-phone">Telephone</label>
+<input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 rounded-none" id="gen-phone" type="tel"/>
+</div>
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="gen-desc">Message / Intent</label>
+<textarea class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 resize-none rounded-none" id="gen-desc" required="" rows="3"></textarea>
+</div>
+<div class="md:col-span-2 flex justify-end mt-4">
+<button class="border border-primary-container text-on-surface px-8 py-3 font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container hover:text-surface-container-lowest transition-all duration-150 ease-in-out flex items-center space-x-2" type="submit">
+<span>Transmit Message</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Form 2: Request Proposal (Detailed) -->
+<section class="pt-8 border-t border-outline/10">
+<div class="flex items-center space-x-4 mb-8">
+<h2 class="font-headline-md text-headline-md text-primary">Formal Proposal Request</h2>
+<div class="flex-grow h-[1px] bg-primary/20"></div>
+<div class="font-label-sm text-label-sm text-primary border border-primary px-2 py-1">TECH-REQ-01</div>
+</div>
+<form class="bg-surface-container-lowest p-6 md:p-8 border border-outline/10 space-y-10" id="contactProposalForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+<div class="flex flex-col"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="full-name">Full Name</label><input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md rounded-none" id="full-name" required type="text"/></div>
+<div class="flex flex-col"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="email-address">Email Address</label><input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md rounded-none" id="email-address" required type="email"/></div>
+<div class="flex flex-col"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="company-name">Company / Organization</label><input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md rounded-none" id="company-name" type="text"/></div>
+<div class="flex flex-col"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="phone-number">Telephone</label><input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md rounded-none" id="phone-number" type="tel"/></div>
+</div>
+<!-- Project Scope -->
+<div class="space-y-6">
+<h4 class="font-title-lg text-title-lg text-on-surface border-b border-outline/10 pb-2">1. Project Specifications</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="project-name">Project Designation / Name</label>
+<input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 rounded-none" id="project-name" type="text"/>
+</div>
+<div class="flex flex-col md:col-span-2 relative">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="project-type">Primary Development Type</label>
+<select class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 appearance-none rounded-none cursor-pointer" id="project-type">
+<option class="bg-surface-container-high text-on-surface-variant" disabled="" selected="" value="">Select Classification...</option>
+<option class="bg-surface-container-high text-on-surface" value="residential">Luxury Residential Construction</option>
+<option class="bg-surface-container-high text-on-surface" value="commercial">Commercial / High-Rise Development</option>
+<option class="bg-surface-container-high text-primary" value="lift">Lift Installation &amp; Procurement</option>
+<option class="bg-surface-container-high text-on-surface" value="renovation">Structural Renovation</option>
+<option class="bg-surface-container-high text-on-surface" value="consulting">Architectural Consulting</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 bottom-2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Conditional Fields (Hidden by default) -->
+<div class="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 hidden animate-fade-in border-l-2 border-primary pl-4 ml-2" id="conditional-lift-fields">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2" for="num-floors">Number of Floors Designed</label>
+<input class="bg-transparent border-0 border-b border-primary/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-primary font-body-md transition-colors duration-150 rounded-none placeholder-primary/30" id="num-floors" min="1" placeholder="e.g. 12" type="number"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2" for="num-lifts">Required Lift Units</label>
+<input class="bg-transparent border-0 border-b border-primary/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-primary font-body-md transition-colors duration-150 rounded-none placeholder-primary/30" id="num-lifts" min="1" placeholder="e.g. 3" type="number"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Timeline & Budget -->
+<div class="space-y-6">
+<h4 class="font-title-lg text-title-lg text-on-surface border-b border-outline/10 pb-2">2. Procurement Constraints</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="timeline">Estimated Timeline</label>
+<select class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 appearance-none rounded-none cursor-pointer" id="timeline">
+<option class="bg-surface-container-high" value="">Select timeframe...</option>
+<option class="bg-surface-container-high" value="q1">Immediate (Q1)</option>
+<option class="bg-surface-container-high" value="q2">Next 6 Months</option>
+<option class="bg-surface-container-high" value="y1">Next 12 Months</option>
+<option class="bg-surface-container-high" value="future">Planning Phase</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2" for="budget">Estimated Capital (USD)</label>
+<input class="bg-transparent border-0 border-b border-outline/40 focus:border-primary-container focus:ring-0 px-0 py-2 text-on-surface font-body-md transition-colors duration-150 rounded-none" id="budget" placeholder="Optional" type="text"/>
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-outline/10 flex justify-between items-center">
+<p class="font-label-sm text-label-sm text-outline-variant max-w-xs">All schematics and proprietary data remain confidential under NDA policies.</p>
+<button class="border border-primary-container bg-primary-container text-surface-container-lowest px-8 py-3 font-label-md text-label-md uppercase tracking-wider hover:bg-transparent hover:text-primary-container transition-all duration-150 ease-in-out flex items-center space-x-2" type="submit">
+<span>Initiate Proposal</span>
+</button>
+</div>
+</form>
+</section>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest w-full relative border-t border-outline/10 z-20">
+<div class="grid grid-cols-12 gap-gutter max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-16">
+<div class="col-span-12 md:col-span-6 flex flex-col space-y-4">
+<span class="font-headline-md text-headline-md text-primary">Lumora DeMoore</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                    Lumora DeMoore Properties · Ofankor Barrier, Accra, Ghana · 0500887266 · Lumora_demore@yahoo.com
+                </p>
+</div>
+<div class="col-span-12 md:col-span-6 flex flex-wrap gap-x-8 gap-y-4 items-end md:justify-end mt-8 md:mt-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Cookie Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Site Map</a>
+</div>
+</div>
+</footer>
+<!-- Interactive Logic Script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectTypeSelect = document.getElementById('project-type');
+            const conditionalFields = document.getElementById('conditional-lift-fields');
+            const floorsInput = document.getElementById('num-floors');
+            const liftsInput = document.getElementById('num-lifts');
+
+            projectTypeSelect.addEventListener('change', (e) => {
+                if (e.target.value === 'lift') {
+                    conditionalFields.classList.remove('hidden');
+                    floorsInput.required = true;
+                    liftsInput.required = true;
+                } else {
+                    conditionalFields.classList.add('hidden');
+                    floorsInput.required = false;
+                    liftsInput.required = false;
+                    floorsInput.value = '';
+                    liftsInput.value = '';
+                }
+            });
+        });
+    </script>
+<style>
+        .animate-fade-in {
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<script src="../integration.js"></script>
+</body></html>

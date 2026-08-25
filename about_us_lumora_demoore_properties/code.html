@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Lumora DeMoore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#353534",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-container": "#dab36a",
+                        "tertiary-fixed": "#e3e2e2",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface": "#131313",
+                        "secondary-container": "#604403",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-bright": "#3a3939",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#d0c5af",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-container": "#201f1f",
+                        "outline": "#99907c",
+                        "surface-dim": "#131313",
+                        "on-error-container": "#ffdad6",
+                        "tertiary": "#cfcece",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "on-surface": "#e5e2e1",
+                        "primary-container": "#d4af37",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "inverse-primary": "#735c00",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed": "#241a00",
+                        "primary-fixed": "#ffe088",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-container": "#554300",
+                        "primary": "#f2ca50",
+                        "surface-tint": "#e9c349",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "background": "#131313",
+                        "on-tertiary-container": "#444546",
+                        "on-primary": "#3c2f00",
+                        "secondary": "#e9c176",
+                        "on-secondary": "#412d00",
+                        "surface-container-highest": "#353534",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "secondary-fixed": "#ffdea5",
+                        "on-background": "#e5e2e1",
+                        "tertiary-container": "#b3b3b3",
+                        "outline-variant": "#4d4635",
+                        "inverse-surface": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "grid-column-count": "12",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "title-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Manrope"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #131313; color: #e5e2e1; }
+        .blueprint-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(197, 160, 89, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(197, 160, 89, 0.05) 1px, transparent 1px); }
+        .tech-line-h { height: 1px; background-color: rgba(197, 160, 89, 0.15); width: 100%; }
+        .tech-line-v { width: 1px; background-color: rgba(197, 160, 89, 0.15); height: 100%; }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container relative min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline/20 flat no shadows transition-all duration-150 ease-in-out">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<a class="font-display-lg text-title-lg tracking-tighter text-primary" href="#">Lumora DeMoore</a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Home</a>
+<a class="text-primary border-b border-primary pb-1" href="#">About</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Projects</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Quality</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Properties</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Contact</a>
+</div>
+<button class="hidden md:block border border-[#D4AF37] text-white px-6 py-2 hover:bg-[#D4AF37] hover:text-[#0B0B0B] transition-all duration-150 font-label-md text-label-md uppercase">Request a Proposal</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'wght' 300;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-32 pb-24 blueprint-grid relative">
+<div class="absolute inset-y-0 left-margin-desktop tech-line-v hidden md:block"></div>
+<div class="absolute inset-y-0 right-margin-desktop tech-line-v hidden md:block"></div>
+<!-- Hero: Who We Are -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-32 relative">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 relative z-10">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4 block">Who We Are</span>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">Practical delivery. Quality that lasts.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Lumora DeMoore Properties brings construction solutions, specialist finishing, procurement, project coordination and property development together under one accountable team in Ghana.</p>
+</div>
+<div class="md:col-span-7 relative h-[600px]">
+<div class="absolute inset-0 bg-surface-container-high border border-outline/10 overflow-hidden group">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" data-alt="A dramatic low-angle shot of a highly modern, brutalist concrete and glass building structure in the golden hour light. The image captures the crisp architectural lines, deep shadows, and precise engineering. The aesthetic is corporate luxury, focusing on texture and structural integrity against a clear, deep sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd73PyrPe2up94l3E0AqV_7gwnPcg_Xs-iWRr4FUbwMvpz7Yq0Cf4Ysd_37sTrJaDXiQex-4RXmV5iZONfBht75-CdyWSgZltavcVT1dOAbbtYg-Oqjex8VN8T-0YPjYBFP4__f5huYfQhJg2wdmi9pMD4TDpGj0YQwqYn8CilJ1sl-kdQrEigFsTUz1NSEpD9XC-Hd7Eh-45cHNNz0uZM0P5xMN1QivhSclyhwLl8hHo0yrABsKJm"/>
+<div class="absolute top-4 right-4 bg-[#181818] px-3 py-1 font-label-sm text-label-sm text-[#E8E8E8] border border-outline/20">REF: ABT-001</div>
+</div>
+</div>
+</div>
+<div class="tech-line-h mt-32"></div>
+</section>
+<!-- Founders and Management -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4 block">The people behind the work</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-10">Founders &amp; Management</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<article class="bg-[#121212] border border-[#181818] p-8">
+<p class="font-label-sm text-label-sm text-primary uppercase mb-3">Co-Founder · Managing Director</p>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-4">Bernard Moore</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Bernard provides overarching leadership and strategic vision, driving operational excellence, project execution, and sustainable growth for the company and its partners. He brings hands-on experience in construction project management, building technology, site operations, and client relations.</p>
+</article>
+<article class="bg-[#121212] border border-[#181818] p-8">
+<p class="font-label-sm text-label-sm text-primary uppercase mb-3">Co-Founder · Commercial Director</p>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-4">Isaac Kwame Selorm Agbesi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Isaac oversees financial strategy, risk management, and capital allocation to drive profitability, secure project funding, and safeguard commercial success across developments. He also supports businesses across financial analysis, banking operations, and investment research, with experience in commercial banking, credit, financial markets, and corporate finance.</p>
+</article>
+<article class="bg-[#121212] border border-[#181818] p-8">
+<p class="font-label-sm text-label-sm text-primary uppercase mb-3">Co-Founder · Asset &amp; Procurement Manager</p>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-4">Eric Attakorah</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Eric optimizes equipment and site assets while managing vendor partnerships, raw material supply chains, and procurement costs to support project efficiency. He supports Lumora DeMoore across procurement and financial coordination, bringing experience in banking, customer service, financial operations, and administrative processes.</p>
+</article>
+</div>
+<div class="tech-line-h mt-32"></div>
+</section>
+<!-- Vision & Mission -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-[#121212] border border-[#181818] p-12 relative group hover:border-primary/30 transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block" style="font-variation-settings: 'wght' 200;">visibility</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Our Vision</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">To become a trusted Ghanaian construction and property solutions company recognized for quality, reliability, innovation and integrated project delivery.</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'wght' 100;">domain</span>
+</div>
+</div>
+<div class="bg-[#121212] border border-[#181818] p-12 relative group hover:border-primary/30 transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block" style="font-variation-settings: 'wght' 200;">flag</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Our Mission</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">To deliver dependable construction and property solutions through quality workmanship, professional project management, responsible procurement and long-term client relationships.</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'wght' 100;">architecture</span>
+</div>
+</div>
+</div>
+<div class="tech-line-h mt-32"></div>
+</section>
+<!-- Core Values -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4 block text-center">Foundation Principles</span>
+<h2 class="font-headline-md text-headline-md text-center text-on-surface mb-16">Our Core Values</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface border border-outline/10 p-6 text-center hover:bg-[#121212] transition-colors duration-150">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'wght' 200;">gavel</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Integrity</h3>
+</div>
+<div class="bg-surface border border-outline/10 p-6 text-center hover:bg-[#121212] transition-colors duration-150">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'wght' 200;">diamond</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Quality</h3>
+</div>
+<div class="bg-surface border border-outline/10 p-6 text-center hover:bg-[#121212] transition-colors duration-150">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'wght' 200;">straighten</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Precision</h3>
+</div>
+<div class="bg-surface border border-outline/10 p-6 text-center hover:bg-[#121212] transition-colors duration-150">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'wght' 200;">work</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Professionalism</h3>
+</div>
+<div class="bg-surface border border-outline/10 p-6 text-center hover:bg-[#121212] transition-colors duration-150">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'wght' 200;">health_and_safety</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Safety</h3>
+</div>
+<div class="bg-surface border border-outline/10 p-6 text-center hover:bg-[#121212] transition-colors duration-150">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'wght' 200;">verified</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Reliability</h3>
+</div>
+<div class="bg-surface border border-outline/10 p-6 text-center hover:bg-[#121212] transition-colors duration-150 md:col-span-2">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'wght' 200;">lightbulb</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Innovation</h3>
+</div>
+</div>
+<div class="tech-line-h mt-32"></div>
+</section>
+<!-- Our Approach -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-16">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase mb-4 block">Methodology</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-16">Our Approach</h2>
+<div class="relative">
+<!-- The Blueprint Line -->
+<div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-primary/20 -translate-x-1/2 hidden md:block"></div>
+<div class="space-y-16">
+<!-- Step 1 -->
+<div class="flex flex-col md:flex-row items-center justify-between w-full">
+<div class="md:w-5/12 mb-6 md:mb-0 text-left md:text-right md:pr-12">
+<h3 class="font-title-lg text-title-lg text-primary mb-2">01. Understand</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Deep client consultation and site analysis to define the architectural parameters.</p>
+</div>
+<div class="w-16 h-16 rounded-full border border-primary bg-surface flex items-center justify-center z-10 shrink-0 mx-auto md:mx-0">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 200;">search</span>
+</div>
+<div class="md:w-5/12 mt-6 md:mt-0 md:pl-12 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+<div class="bg-cover bg-center w-full h-48 border border-outline/20" data-alt="Close up shot of architectural blueprints spread out on a wooden table, illuminated by a warm desk lamp. Compasses, metallic rulers, and a fine pen rest on the intricate technical drawings. The mood is focused and precise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvuK6F8pi2Fe3c-COLosOEq4_duXJLxTKEoxTvialngbDmneK14qd8BczrIc3JZvB2dpSmPh4MVnoswX3IuBrvINz-SQyxEpKWCkiUlJGKZrKEzZsm3JxkDVN-0ODNqwlqz3Khb5LI5uNOtJk8DOcckheGMFO4zWPZ8K7dL4pn6eIVvvrJmH0w74dK5xcCZxuV4bmcIQ8HhQYtBiv1aMGa6nVeBZCQk1bCm9jJdnXmoDgrFtgWvmNd')"></div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center justify-between w-full">
+<div class="md:w-5/12 mb-6 md:mb-0 text-left md:pl-12">
+<h3 class="font-title-lg text-title-lg text-primary mb-2">02. Plan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Rigorous engineering and design phase, producing exact structural blueprints.</p>
+</div>
+<div class="w-16 h-16 rounded-full border border-primary bg-surface flex items-center justify-center z-10 shrink-0 mx-auto md:mx-0">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 200;">architecture</span>
+</div>
+<div class="md:w-5/12 mt-6 md:mt-0 md:pr-12 text-right opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+<div class="bg-cover bg-center w-full h-48 border border-outline/20" data-alt="A glowing 3D CAD model of a modern building displayed on a high-resolution monitor in a dark, sleek architectural studio. The digital lines are crisp and technical, emphasizing the modern digital planning phase." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYRdUGlekrm5IHCSKTHA0M3Mq2eEq8N5SrrWageJcjRjtmqzx-Tr7ZV6iyYLp9ZYPZ7m3iwytpYjsb_olmwafHidj8AHVbXXxb9P7qVbed_KcXvpGRUrfv0U7EdOEYfpCVdBtUD4hFew67QdB9NsgJWiYRxPFZm7ZSHHMDfOk__YB5IEg6sU9x6ehLO0pFomdISVAx0Wqa0jItJvo2KEzgsK3tHI4P5NAICHRpJc4zr9NSOU1ec4Pj')"></div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col md:flex-row items-center justify-between w-full">
+<div class="md:w-5/12 mb-6 md:mb-0 text-left md:text-right md:pr-12">
+<h3 class="font-title-lg text-title-lg text-primary mb-2">03. Execute</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Masterful construction utilizing premium materials and expert masonry.</p>
+</div>
+<div class="w-16 h-16 rounded-full border border-primary bg-surface flex items-center justify-center z-10 shrink-0 mx-auto md:mx-0">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 200;">construction</span>
+</div>
+<div class="md:w-5/12 mt-6 md:mt-0 md:pl-12 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+<div class="bg-cover bg-center w-full h-48 border border-outline/20" data-alt="Sparks flying from a welder working on a heavy steel beam structure. High contrast, gritty yet professional industrial photography highlighting the raw strength and precision of the execution phase." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVejXAxX3Ahn21Px6O5Xgbx274kC9qpJcap4iLD5sMMgrewRlShdqx6-R0DpeIvTzVDt-QmZdg7nS5D1_mBuMN8sReEyDa_P67_EpAm_GXmZqzByqPHQOOggGbekTQG9CyiVtfXvINfGCituN0IbmpgoQw8GGYRdVlpYWBe-ehwRX53v0tXY7yxILYalnLfTk97J0CS1Fl02CjhmlCZiEly7s3jpcgDf7MjCuVXWfC81Rbd5DavfLl')"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full relative border-t border-outline/10 flat no shadows">
+<div class="grid grid-cols-12 gap-gutter max-w-7xl mx-auto px-margin-desktop py-16">
+<div class="col-span-12 md:col-span-6 mb-8 md:mb-0">
+<span class="font-headline-md text-headline-md text-primary block mb-4">Lumora DeMoore</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Quality. Precision. Reliability. Professionalism. Integrated Solutions. Built to Last.</p>
+</div>
+<div class="col-span-12 md:col-span-6 flex flex-col md:items-end justify-between">
+<div class="flex space-x-6 mb-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Cookie Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Site Map</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">© 2026 Lumora DeMoore Properties · Ofankor Barrier, Accra, Ghana.</p>
+</div>
+</div>
+</footer>
+<script src="../integration.js"></script>
+</body></html>

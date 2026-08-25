@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumora DeMoore - Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#353534",
+                    "error-container": "#93000a",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary-container": "#dab36a",
+                    "tertiary-fixed": "#e3e2e2",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface": "#131313",
+                    "secondary-container": "#604403",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-bright": "#3a3939",
+                    "on-primary-fixed-variant": "#574500",
+                    "on-tertiary": "#2f3131",
+                    "error": "#ffb4ab",
+                    "on-surface-variant": "#d0c5af",
+                    "primary-fixed-dim": "#e9c349",
+                    "surface-container": "#201f1f",
+                    "outline": "#99907c",
+                    "surface-dim": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "tertiary": "#cfcece",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "on-surface": "#e5e2e1",
+                    "primary-container": "#d4af37",
+                    "on-secondary-fixed": "#261900",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "inverse-primary": "#735c00",
+                    "inverse-on-surface": "#313030",
+                    "on-primary-fixed": "#241a00",
+                    "primary-fixed": "#ffe088",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-primary-container": "#554300",
+                    "primary": "#f2ca50",
+                    "surface-tint": "#e9c349",
+                    "on-error": "#690005",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "background": "#131313",
+                    "on-tertiary-container": "#444546",
+                    "on-primary": "#3c2f00",
+                    "secondary": "#e9c176",
+                    "on-secondary": "#412d00",
+                    "surface-container-highest": "#353534",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "secondary-fixed": "#ffdea5",
+                    "on-background": "#e5e2e1",
+                    "tertiary-container": "#b3b3b3",
+                    "outline-variant": "#4d4635",
+                    "inverse-surface": "#e5e2e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "grid-column-count": "12",
+                    "gutter": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Manrope"
+                    ],
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-sm": [
+                            "Manrope"
+                    ],
+                    "body-lg": [
+                            "Manrope"
+                    ],
+                    "display-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "title-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Manrope"
+                    ],
+                    "headline-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "72px",
+                            {
+                                    "lineHeight": "80px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "title-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "28px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Blueprint Grid Background */
+        body {
+            background-color: #0B0B0B;
+            background-image: 
+                linear-gradient(rgba(197, 160, 89, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(197, 160, 89, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+            background-position: center top;
+        }
+
+        /* Material Symbols Outline enforcement */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="text-on-surface antialiased min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline/20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-margin-desktop py-4">
+<a class="font-display-lg text-title-lg tracking-tighter text-primary" href="#">Lumora DeMoore</a>
+<nav class="hidden md:flex gap-8 items-center font-title-lg text-title-lg">
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Home</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">About</a>
+<a class="text-primary border-b border-primary pb-1 transition-all duration-150 ease-in-out" href="#">Projects</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Quality</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Properties</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-150" href="#">Contact</a>
+</nav>
+<button class="hidden md:inline-flex items-center justify-center px-6 py-2 border border-primary text-on-surface font-label-md text-label-md uppercase tracking-wider hover:bg-primary hover:text-surface-container-lowest transition-all duration-150">
+                Request a Proposal
+            </button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Header Section -->
+<section class="max-w-7xl mx-auto px-margin-desktop pt-24 pb-16 relative">
+<!-- Architectural Guide Lines -->
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute left-margin-desktop top-0 bottom-0 w-px bg-[#C5A059] opacity-10"></div>
+<div class="absolute right-margin-desktop top-0 bottom-0 w-px bg-[#C5A059] opacity-10"></div>
+</div>
+<div class="relative z-10 grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-8">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block">Portfolio</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6">OUR PROJECTS</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        A curated selection of our structural achievements. From monolithic commercial concrete forms to precision-engineered residential interiors, every project embodies our commitment to uncompromising quality and architectural integrity.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Filtering System -->
+<section class="max-w-7xl mx-auto px-margin-desktop pb-12 border-b border-outline/10">
+<div class="flex flex-wrap gap-4 font-label-md text-label-md uppercase tracking-wider">
+<button class="px-4 py-2 border border-primary text-primary bg-primary/10 transition-colors">All</button>
+<button class="px-4 py-2 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Construction</button>
+<button class="px-4 py-2 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Commercial</button>
+<button class="px-4 py-2 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Residential</button>
+<button class="px-4 py-2 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Institutional</button>
+<button class="px-4 py-2 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Epoxy</button>
+<button class="px-4 py-2 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Fairface</button>
+<button class="px-4 py-2 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Finishing</button>
+</div>
+</section>
+<!-- Project Grid -->
+<section class="max-w-7xl mx-auto px-margin-desktop py-16" id="publicProjects">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="bg-[#121212] border border-outline/10 group cursor-pointer relative overflow-hidden flex flex-col">
+<div class="absolute top-4 right-4 z-20 bg-[#181818] px-3 py-1 border border-outline/20">
+<span class="font-label-sm text-label-sm text-on-surface-variant">REF: LDM-042</span>
+</div>
+<div class="relative h-80 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="A striking architectural photograph of a modern commercial high-rise building under construction at dusk. Exposed structural steel framing and raw concrete cores are illuminated by warm construction lighting. The sky is a deep, moody blue, contrasting with the golden glow of the site. High resolution, precise focus, corporate architectural style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4E_zOFVaa87UpOGMdvOXlwyC3f7r2drIF_D8hMTax2fMdd5FkLiFW64h1069fMLOWWy-A6LGzpcnT5uPhHbjvcdcygrFjF5tm51RPd-IEisyuuWRqNnHzX3XtAyV9LUtqaVpUP9c0bXh26i_hqsl3Pg3XPONfZfsbyCYqeCWpglTtFlXatTPMP3SJZtgkFdMX4_OKMgajaFB6ETFtRzlbWraDW4Gk0jyhY-zOBmyuRkNNLSF4GGIC"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-[#181818] text-[#E8E8E8] font-label-sm text-label-sm px-2 py-1 uppercase">Commercial</span>
+<span class="bg-[#181818] text-[#E8E8E8] font-label-sm text-label-sm px-2 py-1 uppercase">Construction</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">The Apex Tower</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+                                Accra Financial District
+                            </p>
+</div>
+<button class="self-start inline-flex items-center gap-2 font-label-md text-label-md text-primary uppercase tracking-wider group-hover:text-primary-fixed transition-colors">
+                            View Project
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Hover Frame Effect -->
+<div class="absolute inset-0 border border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+</div>
+<!-- Project Card 2 -->
+<div class="bg-[#121212] border border-outline/10 group cursor-pointer relative overflow-hidden flex flex-col">
+<div class="absolute top-4 right-4 z-20 bg-[#181818] px-3 py-1 border border-outline/20">
+<span class="font-label-sm text-label-sm text-on-surface-variant">REF: LDM-088</span>
+</div>
+<div class="relative h-80 overflow-hidden bg-surface-variant">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="A detailed interior shot of a high-end residential living space featuring flawless fairface concrete walls and polished epoxy floors. The space is minimalist, furnished with sleek, dark modern furniture. Large floor-to-ceiling windows let in natural daylight. The lighting highlights the texture of the raw concrete and the smooth, reflective surface of the floor. Architectural photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQXwcf0cizVz3JONdoiNPQ9HIyWgfFzFQSE26GMID1IZlERj0i7WPAzU9UJbF8Lsc3g6BaE9fl1sTauxRfKEdGVkyNgYznCqQWkntIcDWfwE8F5sL3eEBfAI1TA-KrlxsVU4iY5W7WstIHg6j6RZU5NYHd3zpuxKkBasVeam_u4AJ_Xaa0P5sBfJKl1vJcRNbpDfnElGor4lC3TlStEeKTbCn9UWp7K6C7GAeO6Ipc-xwwujcrHbZH"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-[#181818] text-[#E8E8E8] font-label-sm text-label-sm px-2 py-1 uppercase">Residential</span>
+<span class="bg-[#181818] text-[#E8E8E8] font-label-sm text-label-sm px-2 py-1 uppercase">Fairface</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Villa Monolith</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+                                Greater Accra, Ghana
+                            </p>
+</div>
+<button class="self-start inline-flex items-center gap-2 font-label-md text-label-md text-primary uppercase tracking-wider group-hover:text-primary-fixed transition-colors">
+                            View Project
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="absolute inset-0 border border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full relative border-t border-outline/10 mt-24">
+<div class="grid grid-cols-12 gap-gutter max-w-7xl mx-auto px-margin-desktop py-16">
+<div class="col-span-12 md:col-span-6 mb-8 md:mb-0">
+<a class="font-headline-md text-headline-md text-primary block mb-4" href="#">Lumora DeMoore</a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                    Quality construction, specialist finishing, procurement, and property solutions across Ghana.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-6 flex flex-col md:items-end justify-between">
+<div class="flex flex-wrap gap-6 mb-8 md:mb-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Cookie Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Site Map</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    © 2026 Lumora DeMoore Properties · Ofankor Barrier, Accra, Ghana.
+                </p>
+</div>
+</div>
+</footer>
+<script src="../integration.js"></script>
+</body></html>

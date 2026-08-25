@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request a Proposal | Lumora DeMoore Properties</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Metrophobic&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "outline-variant": "#4d4635",
+                        "surface-dim": "#131313",
+                        "on-primary-container": "#554300",
+                        "surface-bright": "#3a3939",
+                        "surface-container-lowest": "#0e0e0e",
+                        "inverse-on-surface": "#313030",
+                        "primary": "#f2ca50",
+                        "secondary": "#c8c6c5",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed": "#241a00",
+                        "on-error": "#690005",
+                        "inverse-primary": "#735c00",
+                        "surface-tint": "#e9c349",
+                        "surface-container": "#201f1f",
+                        "surface": "#131313",
+                        "background": "#131313",
+                        "outline": "#99907c",
+                        "on-secondary-container": "#b7b5b4",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "tertiary-container": "#b4b2b2",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-primary-fixed-variant": "#574500",
+                        "error-container": "#93000a",
+                        "on-tertiary": "#303030",
+                        "on-primary": "#3c2f00",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-secondary": "#313030",
+                        "primary-fixed": "#ffe088",
+                        "on-surface-variant": "#d0c5af",
+                        "primary-container": "#d4af37",
+                        "error": "#ffb4ab",
+                        "tertiary": "#d0cdcd",
+                        "on-tertiary-container": "#454545",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-background": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "secondary-container": "#474746",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-variant": "#353534",
+                        "surface-container-highest": "#353534",
+                        "on-surface": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "section-gap": "160px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Metrophobic"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-caps": ["Metrophobic"],
+                        "body-md": ["Metrophobic"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.2em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .form-input-line {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #1A1A1A;
+            color: #e5e2e1;
+            padding: 12px 0;
+            transition: border-color 0.3s ease;
+            width: 100%;
+        }
+        .form-input-line:focus {
+            outline: none;
+            border-bottom-color: #D4AF37;
+            box-shadow: none;
+        }
+        .form-select-dark {
+            background-color: #131313;
+            color: #e5e2e1;
+            border: none;
+            border-bottom: 1px solid #1A1A1A;
+            padding: 12px 0;
+            width: 100%;
+            transition: border-color 0.3s ease;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23d0c5af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0 center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+        }
+        .form-select-dark:focus {
+            outline: none;
+            border-bottom-color: #D4AF37;
+            box-shadow: none;
+        }
+        .form-label-caps {
+            color: #d0c5af;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+            font-weight: 600;
+            font-family: 'Metrophobic', sans-serif;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .btn-primary {
+            background-color: #D4AF37;
+            color: #0F0F0F;
+            padding: 16px 32px;
+            font-family: 'Metrophobic', sans-serif;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            box-shadow: inset 0 0 10px rgba(255,255,255,0.3);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(15,15,15,0.9) 0%, rgba(15,15,15,0.4) 100%);
+        }
+        
+        /* Custom scrollbar for dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #131313;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #353534;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #474747;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Excluded as per Semantic Shell Mandate for Transactional/Focused intent) -->
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-sm md:text-headline-sm tracking-tighter text-on-surface uppercase">
+            Lumora DeMoore
+        </div>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span class="hidden md:inline">Cancel</span>
+</a>
+</header>
+<main class="flex-grow pt-20">
+<!-- Hero / Form Section Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 min-h-[calc(100vh-80px)]">
+<!-- Left Side: Imagery (8 columns on desktop) -->
+<div class="hidden md:block md:col-span-7 lg:col-span-8 relative h-full">
+<div class="absolute inset-0 bg-surface-container-high">
+<div class="bg-cover bg-center w-full h-full grayscale-[20%] opacity-80 mix-blend-luminosity" data-alt="A striking high-end architectural shot of a modern glass elevator inside a luxury commercial building lobby. The scene features deep rich wood paneling, pristine marble floors reflecting soft ambient light, and a majestic gold crystal chandelier overhead. The mood is silent, exclusive, and monumental, adhering to a high-contrast minimalism aesthetic with deep blacks and subtle metallic gold accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxu1DLwxhxens5_Fc0fRshwRuje1mpBFtq6To6fjOIX0dTAFfAFZctGmgD9axcwVhip8uC-1UBL_Twz-J6R4wgtRv5VdTV_Nb918X3Fp93Q3OyWmMVPtKeipyk7QGmULUJEH0LYr_LQwBAD9ysX-WVy8jFLgH1g_EXcLYv_oJ39M1OQWY9aYaHn7YTPJkvWJfuBKQcfQEF0MJykaq4kPe7US3ZVxrckR0aYyLpiQlnizTKaHwX7LASbA')"></div>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="absolute inset-0 p-margin-desktop flex flex-col justify-end">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6 max-w-2xl">
+                        Constructing Excellence,<br/>Elevating Standards.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Initiate a consultation with our master builders and technical specialists. Precision and quality define every phase of our process.
+                    </p>
+</div>
+</div>
+<!-- Right Side: Form (4 columns on desktop) -->
+<div class="col-span-1 md:col-span-5 lg:col-span-4 bg-surface p-margin-mobile md:p-margin-desktop flex flex-col justify-center border-l border-outline-variant/20 overflow-y-auto">
+<div class="mb-12 md:hidden">
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-on-surface mb-4">
+                        Request a Proposal
+                    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Detail your project requirements for a comprehensive review by our specialists.
+                    </p>
+</div>
+<div class="hidden md:block mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Project Details</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Please provide the specifics of your inquiry.</p>
+</div>
+<form class="space-y-8" id="proposalForm">
+<!-- Contact Info Group -->
+<div class="space-y-6">
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="fullName">Full Name</label>
+<input class="form-input-line font-body-md text-body-md" id="fullName" placeholder="Enter your full name" required="" type="text"/>
+</div>
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="emailAddress">Email Address</label>
+<input class="form-input-line font-body-md text-body-md" id="emailAddress" placeholder="Enter your professional email" required="" type="email"/>
+</div>
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="companyName">Company / Organization (Optional)</label>
+<input class="form-input-line font-body-md text-body-md" id="companyName" placeholder="Enter company name" type="text"/>
+</div>
+</div>
+<!-- Project Type Selection -->
+<div class="pt-4">
+<label class="form-label-caps font-label-caps text-label-caps" for="projectType">Project Type / Required Service</label>
+<select class="form-select-dark font-body-md text-body-md" id="projectType" required="">
+<option disabled="" selected="" value="">Select a primary service</option>
+<option value="Construction Solutions">Construction Solutions</option>
+<option value="Epoxy Flooring">Epoxy Flooring</option>
+<option value="Protective Coatings">Protective Coatings</option>
+<option value="Fairface Concrete Finishing">Fairface Concrete Finishing</option>
+<option value="Concrete Rectification">Concrete Rectification</option>
+<option value="Waterproofing">Waterproofing</option>
+<option value="Surface Preparation &amp; Finishing">Surface Preparation &amp; Finishing</option>
+<option value="Lift Installation &amp; Procurement">Lift Installation &amp; Procurement</option>
+<option value="Property Development">Property Development</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<!-- Dynamic Lift Fields (Initially Hidden) -->
+<div class="hidden space-y-6 pt-4 border-t border-outline-variant/30 mt-6 relative before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-primary-container before:opacity-50 pl-4" id="liftFields">
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-4">Lift Specifications</h3>
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="buildingType">Building Type</label>
+<select class="form-select-dark font-body-md text-body-md" id="buildingType">
+<option disabled="" selected="" value="">Select building type</option>
+<option value="Commercial">Commercial</option>
+<option value="Residential">Residential (High-Rise)</option>
+<option value="Industrial">Industrial</option>
+<option value="Mixed-Use">Mixed-Use</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="numFloors">Number of Floors</label>
+<input class="form-input-line font-body-md text-body-md" id="numFloors" min="1" placeholder="e.g. 10" type="number"/>
+</div>
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="numLifts">Lifts Required</label>
+<input class="form-input-line font-body-md text-body-md" id="numLifts" min="1" placeholder="e.g. 2" type="number"/>
+</div>
+</div>
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="liftCapacity">Estimated Lift Capacity</label>
+<select class="form-select-dark font-body-md text-body-md" id="liftCapacity">
+<option disabled="" selected="" value="">Select capacity range</option>
+<option value="Light (Up to 600kg)">Light (Up to 600kg)</option>
+<option value="Standard (600kg - 1000kg)">Standard (600kg - 1000kg)</option>
+<option value="Heavy (1000kg+)">Heavy (1000kg+)</option>
+<option value="Freight">Freight / Industrial</option>
+</select>
+</div>
+<div>
+<label class="form-label-caps font-label-caps text-label-caps mb-3">Installation Type</label>
+<div class="flex gap-6">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="text-primary-container bg-transparent border-outline-variant focus:ring-primary-container focus:ring-offset-background" name="installationType" type="radio" value="New"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">New Installation</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="text-primary-container bg-transparent border-outline-variant focus:ring-primary-container focus:ring-offset-background" name="installationType" type="radio" value="Replacement"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Replacement / Modernization</span>
+</label>
+</div>
+</div>
+</div>
+<!-- General Project Details -->
+<div class="space-y-6 pt-4">
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="projectLocation">Project Location</label>
+<input class="form-input-line font-body-md text-body-md" id="projectLocation" placeholder="City, Region, or Address" type="text"/>
+</div>
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="projectStage">Current Project Stage</label>
+<select class="form-select-dark font-body-md text-body-md" id="projectStage">
+<option disabled="" selected="" value="">Select current stage</option>
+<option value="Concept">Concept / Early Planning</option>
+<option value="Design">Design / Blueprint Phase</option>
+<option value="Tendering">Tendering / Procurement</option>
+<option value="Ready">Ready to Build</option>
+</select>
+</div>
+<div>
+<label class="form-label-caps font-label-caps text-label-caps" for="projectDescription">Additional Details</label>
+<textarea class="form-input-line font-body-md text-body-md resize-none" id="projectDescription" placeholder="Provide any further context or specific requirements..." rows="3"></textarea>
+</div>
+</div>
+<div class="pt-8">
+<button class="btn-primary w-full flex justify-center items-center gap-2" type="submit">
+<span>Submit Request</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<p class="text-center font-body-md text-[12px] text-on-surface-variant mt-4">
+                            Our team typically responds within 24-48 business hours.
+                        </p>
+</div>
+</form>
+</div>
+</div>
+</main>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectTypeSelect = document.getElementById('projectType');
+            const liftFields = document.getElementById('liftFields');
+
+            projectTypeSelect.addEventListener('change', (e) => {
+                if (e.target.value === 'Lift Installation & Procurement') {
+                    liftFields.classList.remove('hidden');
+                    // Add slight animation
+                    liftFields.style.opacity = '0';
+                    setTimeout(() => {
+                        liftFields.style.transition = 'opacity 0.5s ease';
+                        liftFields.style.opacity = '1';
+                    }, 50);
+                } else {
+                    liftFields.classList.add('hidden');
+                }
+            });
+
+            // Prevent default form submission for demo
+            document.getElementById('proposalForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = e.target.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                
+                btn.innerHTML = '<span>Processing...</span>';
+                btn.style.backgroundColor = '#e9c349';
+                
+                setTimeout(() => {
+                    btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> <span>Request Sent</span>';
+                    btn.style.backgroundColor = '#4caf50';
+                    btn.style.color = '#fff';
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.backgroundColor = '';
+                        btn.style.color = '';
+                        e.target.reset();
+                        liftFields.classList.add('hidden');
+                    }, 3000);
+                }, 1500);
+            });
+        });
+    </script>
+</body></html>
