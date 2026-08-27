@@ -1,2 +1,5 @@
 .DS_Store
 Thumbs.db
+/backend/.env
+/backend/uploads/*
+!/backend/uploads/.gitkeep

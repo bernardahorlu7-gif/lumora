@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quotation Builder - Step 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-surface": "#313030",
+                      "primary-fixed": "#e2e2e5",
+                      "surface": "#fcf8f8",
+                      "secondary-container": "#fed488",
+                      "on-primary-fixed": "#1a1c1e",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#e2e2e5",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#838486",
+                      "surface-container-high": "#ebe7e7",
+                      "surface-bright": "#fcf8f8",
+                      "on-primary-fixed-variant": "#454749",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "surface-tint": "#5d5e61",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#44474a",
+                      "on-tertiary-fixed": "#1a1c1e",
+                      "secondary": "#775a19",
+                      "on-surface": "#1c1b1b",
+                      "tertiary": "#000101",
+                      "surface-variant": "#e5e2e1",
+                      "surface-dim": "#ddd9d9",
+                      "primary-fixed-dim": "#c6c6c9",
+                      "primary-container": "#1a1c1e",
+                      "on-secondary-fixed": "#261900",
+                      "outline": "#75777a",
+                      "secondary-fixed": "#ffdea5",
+                      "inverse-primary": "#c6c6c9",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#c5c6ca",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#785a1a",
+                      "secondary-fixed-dim": "#e9c176",
+                      "inverse-on-surface": "#f4f0ef",
+                      "primary": "#000101",
+                      "surface-container": "#f1eded",
+                      "tertiary-fixed-dim": "#c6c6c9",
+                      "on-primary-container": "#838486",
+                      "on-background": "#1c1b1b",
+                      "tertiary-container": "#1a1c1e",
+                      "on-primary": "#ffffff",
+                      "background": "#fcf8f8",
+                      "surface-container-highest": "#e5e2e1",
+                      "surface-container-low": "#f6f3f2",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#454749"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "24px",
+                      "container-max-width": "1440px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Hanken Grotesk"],
+                      "label-caps": ["Hanken Grotesk"],
+                      "display-lg": ["Libre Caslon Text"],
+                      "body-md": ["Hanken Grotesk"],
+                      "headline-sm": ["Libre Caslon Text"],
+                      "data-tabular": ["Hanken Grotesk"],
+                      "body-sm": ["Hanken Grotesk"],
+                      "headline-md": ["Libre Caslon Text"],
+                      "headline-lg": ["Libre Caslon Text"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                      "data-tabular": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Subtle shadow for high-end feel */
+        .ambient-shadow {
+            box-shadow: 0 10px 30px rgba(26, 28, 30, 0.05);
+        }
+        
+        /* Form inputs custom styling matching design system */
+        .premium-input {
+            border: 1px solid rgba(69, 71, 73, 0.3);
+            border-radius: 0.125rem;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+        }
+        .premium-input:focus {
+            outline: none;
+            border-color: #C5A059;
+            box-shadow: 0 0 0 1px #C5A059;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased flex h-screen overflow-hidden">
+<!-- Side Nav Bar (Shared Component) -->
+<nav class="hidden md:flex flex-col bg-surface-container-low text-on-surface docked full-height left-0 w-64 border-r border-outline-variant/20 h-full py-gutter px-4 flex-shrink-0">
+<div class="mb-8">
+<h1 class="font-headline-sm text-headline-sm text-primary">Staff Portal</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Operations Management</p>
+</div>
+<ul class="flex flex-col gap-2 flex-grow">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-caps text-label-caps">Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="font-label-caps text-label-caps">Projects</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-label-caps text-label-caps">Clients</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded bg-secondary-container text-on-secondary-container font-bold scale-98 transition-all" href="#">
+<span class="material-symbols-outlined icon-fill" data-icon="request_quote">request_quote</span>
+<span class="font-label-caps text-label-caps">Quotes</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="font-label-caps text-label-caps">Proposals</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-label-caps text-label-caps">Invoices</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-label-caps text-label-caps">Procurement</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-caps text-label-caps">Settings</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col h-full overflow-hidden">
+<!-- Top Nav Bar (Shared Component) -->
+<header class="bg-surface-container border-b border-outline-variant/20 flex justify-between items-center h-16 px-gutter w-full flex-shrink-0">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-on-surface-variant p-2 -ml-2 rounded hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="font-headline-sm text-headline-sm text-primary">Portal</div>
+</div>
+<div class="flex items-center gap-4">
+<button aria-label="Notifications" class="text-on-surface-variant p-2 rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button aria-label="Help" class="text-on-surface-variant p-2 rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant overflow-hidden border border-outline-variant/20 flex-shrink-0">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A professional headshot of a business executive wearing a dark suit against a neutral studio background, crisp focus and modern lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhdEp9F9YknMm_xROGCUPTebYHZBYetjc9ISMdWqr2YkN7vLHMdSD4bVQ-ffr4MPs_teFFhWXhx0ceZ90TpQEYMf822irLX_5rWmP1UpNm0XBlnR4uq5Wwl_uKkOF_EYL_UqKHmlcsIZZsEbK7uQOrl_t7AJUd-9ReMmZ1uJ2pyasROJmfWB5dPkGDNbmvbMmfqVoEo-vjfcP2Lxv3R53CI0ni9l9u36zJMSTJdg8Pva2gRg9G7-tGOg"/>
+</div>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 overflow-y-auto p-4 md:p-margin-desktop bg-surface flex flex-col items-center">
+<div class="w-full max-w-4xl mx-auto flex flex-col gap-8">
+<!-- Page Header -->
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Quotation Builder</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Create a new architectural or construction quote.</p>
+</div>
+<!-- Stepper Progress (Quotation Builder specific component) -->
+<div class="w-full">
+<div class="flex items-center justify-between relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-px bg-outline-variant/30 -z-10"></div>
+<!-- Step 1: Active -->
+<div class="flex flex-col items-center gap-2 bg-surface px-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-caps font-bold ring-4 ring-surface">1</div>
+<span class="font-label-caps text-label-caps text-on-surface">Client &amp; Project</span>
+</div>
+<!-- Step 2: Inactive -->
+<div class="flex flex-col items-center gap-2 bg-surface px-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-caps border border-outline-variant/30 ring-4 ring-surface">2</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Scope</span>
+</div>
+<!-- Step 3: Inactive -->
+<div class="flex flex-col items-center gap-2 bg-surface px-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-caps border border-outline-variant/30 ring-4 ring-surface">3</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Pricing</span>
+</div>
+<!-- Step 4: Inactive -->
+<div class="flex flex-col items-center gap-2 bg-surface px-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-caps border border-outline-variant/30 ring-4 ring-surface">4</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Review</span>
+</div>
+</div>
+</div>
+<!-- Form Card -->
+<div class="bg-surface-container-lowest ambient-shadow rounded-lg border border-outline-variant/20 p-8">
+<form class="flex flex-col gap-8">
+<!-- Section: Selection -->
+<fieldset class="flex flex-col gap-6">
+<legend class="font-headline-sm text-headline-sm text-primary mb-4 border-b border-outline-variant/20 pb-2 w-full">Entity Selection</legend>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Client Dropdown -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="client-select">Client Name</label>
+<div class="relative">
+<select class="premium-input w-full p-3 pr-10 font-body-md text-on-surface appearance-none bg-surface-container-lowest" id="client-select">
+<option disabled="" selected="" value="">Search or select client...</option>
+<option value="1">Acme Corp Properties</option>
+<option value="2">Meridian Development Group</option>
+<option value="3">Oasis Architectural Partners</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Project Dropdown -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="project-select">Associated Project</label>
+<div class="relative">
+<select class="premium-input w-full p-3 pr-10 font-body-md text-on-surface appearance-none bg-surface-container-lowest" id="project-select">
+<option disabled="" selected="" value="">Select project...</option>
+<option value="1">Acme Tower Renovation</option>
+<option value="2">Meridian Plaza Phase 2</option>
+<option value="3">New Build - Oasis Residences</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</fieldset>
+<!-- Section: Quote Details -->
+<fieldset class="flex flex-col gap-6">
+<legend class="font-headline-sm text-headline-sm text-primary mb-4 border-b border-outline-variant/20 pb-2 w-full">Document Parameters</legend>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Date -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="quote-date">Quote Date</label>
+<input class="premium-input w-full p-3 font-body-md text-on-surface bg-surface-container-lowest" id="quote-date" type="date" value="2024-05-20"/>
+</div>
+<!-- Validity -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="validity">Validity Period</label>
+<div class="relative">
+<select class="premium-input w-full p-3 pr-10 font-body-md text-on-surface appearance-none bg-surface-container-lowest" id="validity">
+<option value="15">15 Days</option>
+<option selected="" value="30">30 Days</option>
+<option value="60">60 Days</option>
+<option value="90">90 Days</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Currency -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="currency">Currency</label>
+<div class="relative">
+<select class="premium-input w-full p-3 pr-10 font-body-md text-on-surface appearance-none bg-surface-container-lowest" id="currency">
+<option selected="" value="GHS">GHS - Ghanaian Cedi</option>
+<option value="USD">USD - US Dollar</option>
+<option value="EUR">EUR - Euro</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</fieldset>
+<!-- Actions -->
+<div class="flex justify-end gap-4 mt-4 pt-6 border-t border-outline-variant/20">
+<button class="px-6 py-3 font-label-caps text-label-caps text-on-surface hover:underline transition-all" type="button">
+                                Cancel
+                            </button>
+<button class="px-8 py-3 bg-primary text-on-primary font-label-caps text-label-caps rounded hover:bg-inverse-surface transition-colors" type="button">
+                                Next: Scope
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</main>
+</div>
+</body></html>
