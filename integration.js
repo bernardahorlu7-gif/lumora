@@ -1,7 +1,7 @@
 (() => {
   const root = '../';
-  const apiBase = window.LUMORA_API_URL || '/api';
-  const staffPortalUrl = window.LUMORA_STAFF_PORTAL_URL || `${apiBase.replace(/\/api\/?$/, '')}/login.html`;
+  const apiBase = 'https://your-backend.vercel.app/api';
+  const staffPortalUrl = 'https://your-backend.vercel.app/login.html';
   const routes = {
     home: `${root}home_lumora_demoore_properties/code.html`,
     about: `${root}about_us_lumora_demoore_properties/code.html`,
