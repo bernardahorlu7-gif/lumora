@@ -26,6 +26,12 @@ const loginSchema = z.object({
 });
 
 router.post('/login', loginLimiter, asyncHandler(async (req, res) => {
+  if (!process.env.DATABASE_URL) {
+    return res.status(503).json({ error: 'Database is not configured for this deployment. Add DATABASE_URL in Vercel Environment Variables and redeploy.' });
+  }
+  if (!process.env.JWT_SECRET) {
+    return res.status(503).json({ error: 'JWT_SECRET is not configured for this deployment. Add it in Vercel Environment Variables and redeploy.' });
+  }
   const parsed = loginSchema.safeParse(req.body);
   if (!parsed.success) {
     return res.status(400).json({ error: 'Email and password are required' });

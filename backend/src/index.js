@@ -29,6 +29,17 @@ app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 app.use('/api', rateLimit({ windowMs: 60 * 1000, max: 300 }));
 
 app.get('/api/health', (req, res) => res.json({ ok: true, time: new Date().toISOString() }));
+app.get('/api/health/db', async (req, res) => {
+  if (!process.env.DATABASE_URL) return res.status(503).json({ ok: false, database: 'not_configured' });
+  try {
+    const { query } = require('./db/pool');
+    await query('SELECT 1');
+    res.json({ ok: true, database: 'connected' });
+  } catch (error) {
+    console.error('[health] database check failed:', error.message);
+    res.status(503).json({ ok: false, database: 'unavailable' });
+  }
+});
 
 app.use('/api/auth', authRoutes);
 app.use('/api/clients', clientRoutes);

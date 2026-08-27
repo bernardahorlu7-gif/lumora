@@ -13,6 +13,9 @@ Use one Vercel project connected to `bernardahorlu7-gif/lumora`.
 
 The repository root contains the public site, `api/index.js`, and the staff portal files. Vercel must be pointed at this root directory.
 
+The API health endpoint only confirms that the server started. Use `/api/health/db`
+to verify that PostgreSQL is configured and reachable before testing login.
+
 ## Required environment variables
 
 ```text
