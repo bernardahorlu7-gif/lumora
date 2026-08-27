@@ -10,6 +10,7 @@
     { "src": "/invoice_builder.html", "dest": "/backend/public/invoice_builder.html" },
     { "src": "/portal.js", "dest": "/backend/public/portal.js" },
     { "src": "/staff_portal_dashboard/(.*)", "dest": "/backend/public/staff_portal_dashboard/$1" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
